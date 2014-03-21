@@ -5,7 +5,7 @@ future versions may add support for additional requests.
 
 ### Basic usage
 
-The httptest tool run on the shell (either linux or Windows). It's built on java, obviously, so you need java installed to run it. Invoking the help command will display the options available.
+The httptest tool runs on the shell (either linux or Windows). It's built on java, obviously, so you need java installed to run it. Invoking the help command will display the options available.
 
 ```
 $ ./httptest --help
@@ -62,7 +62,7 @@ $ ./httptest -u http://www.example.com -d /home/me/testreports -r csv -r html -t
 
 ### The CSV Tests File
 
-The CSV file is actually tab-delimited. There's not an option at this time to override the delimiter. Each row in the CSV file is considered a single test, or assertion. Each row must have at minimum, two columns. A URL path and an expected response code. Optionally, a third column can be used to specify the Location header value. This is useful for testing 301 and 302 redirects. Below is a simple example (notice, no header!):
+The CSV file is actually tab-delimited. There's not an option at this time to override the delimiter. Each row in the CSV file is considered a single test, or assertion. Each row must have, at minimum, two columns. The first it the URL path/query and the second the expected response code. Optionally, a third column can be used to specify the Location header value. This is useful for testing 301 and 302 redirects. Below is a simple example (notice, no header!):
 
 ```
 /foo	403
@@ -86,4 +86,4 @@ The distTar task will package everything up into a distribution tarball in the .
 
 ### Want more features?
 
-Currently, httptest will meet your needs if you only need to test GET requests, and only care about the response code and location header. If you need more robust testing, drop me note and let me know. Alternatively, feel free to fork this project and make modifications to it.
+Currently, httptest will meet your needs if you only need to test GET requests and only care about the response code and location header. If you need more robust testing, drop me note and let me know. Alternatively, feel free to fork this project and make modifications to it.

@@ -3,22 +3,21 @@ apply plugin:'application'
 mainClassName="com.djoly.httptest.Runner"
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
-	compile (
-		'commons-lang:commons-lang:2.3',
+    compile (
+        'commons-lang:commons-lang:2.3',
         'commons-io:commons-io:2.4',
-		'commons-httpclient:commons-httpclient:3.1',
+        'commons-httpclient:commons-httpclient:3.1',
         'net.sf.opencsv:opencsv:2.3',
         'net.sourceforge.argparse4j:argparse4j:0.2.0'
-	)
-	testCompile (
-		'junit:junit:4.11',
-		'pl.pragmatists:JUnitParams:1.0.2',
-		'org.mockito:mockito-all:1.8.4'
-	)
+    )
+    testCompile (
+        'junit:junit:4.11',
+        'org.mockito:mockito-all:1.8.4'
+    )
 }
 
 

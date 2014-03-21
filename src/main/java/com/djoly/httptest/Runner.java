@@ -44,10 +44,6 @@ import java.util.List;
  */
 public class Runner {
 
-    final static int URL_POS = 0;
-    final static int RESPONSE_CODE_POS = 1;
-    final static int LOCATION_POST = 2;
-
     private File reportDir;
     private List<ReportWriter> writers;
     private PrintStream out;

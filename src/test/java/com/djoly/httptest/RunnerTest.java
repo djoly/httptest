@@ -102,6 +102,7 @@ public class RunnerTest {
         }
     }
 
+    @SuppressWarnings("unchecked")
     @Test
     public void assertionArePassedToWriterSorted() throws Exception {
 
@@ -122,6 +123,7 @@ public class RunnerTest {
         assertEquals(2,runner.run());
     }
 
+    @SuppressWarnings("unchecked")
     @Test
     public void runnerReturnsResultCode1OnWriterException() throws Exception {
         when(writer.write(any(ArrayList.class),any(File.class))).thenThrow(new RuntimeException("Foo"));
