@@ -1,0 +1,10 @@
+/build
+/out
+.idea
+httptest.iml
+gradle-app.setting
+.gradle/
+build.gradle~
+.settings
+.project
+.classpath

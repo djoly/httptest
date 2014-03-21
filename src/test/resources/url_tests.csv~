@@ -1,0 +1,4 @@
+/foo	301	/bar
+/foo/bar	301	/bar/bar
+/bad\t403
+?page=foo	301	/bar

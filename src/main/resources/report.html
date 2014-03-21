@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTTP Test Report</title>
+    <style>
+        table {
+            border-spacing: 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        td, th {
+            padding: 2px 5px;
+            margin: 0px;
+        }
+
+        .error .result {
+            color: orange;
+        }
+        .fail .result {
+            color: red;
+        }
+        .pass .result {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<p>
+Total tests: %s<br/>
+Pass: %s<br/>
+Fail: %s<br/>
+Error: %s<br/>
+</p>
+<table>
+    <th>URL</th><th>Response Code</th><th>Location</th><th>Result</th><th>Message</th>
+    %s
+</table>
+</body>
+</html>
