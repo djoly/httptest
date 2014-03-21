@@ -62,7 +62,7 @@ $ ./httptest -u http://www.example.com -d /home/me/testreports -r csv -r html -t
 
 ### The CSV Tests File
 
-The CSV file is actually tab-delimited. There's not an option at this time to override the delimiter. Each row in the CSV file is considered a single test, or assertion. Each row must have, at minimum, two columns. The first it the URL path/query and the second the expected response code. Optionally, a third column can be used to specify the Location header value. This is useful for testing 301 and 302 redirects. Below is a simple example (notice, no header!):
+The CSV file is actually tab-delimited. There's not an option at this time to override the delimiter. Each row in the CSV file is considered a single test, or assertion. Each row must have, at minimum, two columns. The first is the URL path/query and the second is the expected response code. Optionally, a third column can be used to specify the Location header value. This is useful for testing 301 and 302 redirects. Below is a simple example (notice, no header!):
 
 ```
 /foo	403
