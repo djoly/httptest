@@ -56,6 +56,7 @@ public class AssertionTester {
      */
     public void testAssertion(Assertion assertion) {
         HttpMethod request = new GetMethod(serverUrl + assertion.getUrl());
+        request.setFollowRedirects(false);
 
         try {
             client.executeMethod(request);

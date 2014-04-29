@@ -129,11 +129,14 @@ public class Runner {
                 .setDefault(System.getProperty("user.dir"))
                 .help("The directory the test reports should be written.");
 
-        parser.addArgument("-r", "--report")
+        List<String> defaultReports = new ArrayList<String>();
+        defaultReports.add("html");
+
+        parser.addArgument("-r","--report")
                 .choices("html", "csv")
                 .action(Arguments.append())
                 .type(String.class)
-                .setDefault("html")
+                .setDefault(defaultReports)
                 .help("Specify a list of reports that should be written (separated by space).");
 
         Namespace ns = null;
