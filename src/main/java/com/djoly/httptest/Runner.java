@@ -25,7 +25,6 @@ package com.djoly.httptest;
 
 import au.com.bytecode.opencsv.CSVReader;
 import net.sourceforge.argparse4j.ArgumentParsers;
-import net.sourceforge.argparse4j.impl.Arguments;
 import net.sourceforge.argparse4j.inf.ArgumentParser;
 import net.sourceforge.argparse4j.inf.ArgumentParserException;
 import net.sourceforge.argparse4j.inf.Namespace;
@@ -134,7 +133,7 @@ public class Runner {
 
         parser.addArgument("-r","--report")
                 .choices("html", "csv")
-                .action(Arguments.append())
+                .nargs("+")
                 .type(String.class)
                 .setDefault(defaultReports)
                 .help("Specify a list of reports that should be written (separated by space).");

@@ -43,7 +43,7 @@ Currently, this tool works only on a single base URL. Specify the URL here (sans
 By default, a simple HTML result file will be generated. Optionally, you can specify the report be in CSV format, or generate both.
 
 ```
-$ ./httptest -r csv -r html
+$ ./httptest -r csv html
 ```
 
 #### -d | --dir
@@ -57,7 +57,7 @@ $ ./httptest -u http://www.example.com
 All together now:
 
 ```
-$ ./httptest -u http://www.example.com -d /home/me/testreports -r csv -r html -t /home/me/tests.csv
+$ ./httptest -u http://www.example.com -d /home/me/testreports -r csv html -t /home/me/tests.csv
 ```
 
 ### The CSV Tests File
